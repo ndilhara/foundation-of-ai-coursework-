@@ -124,18 +124,6 @@ Images are sampled from the held-out test split of the research dataset using
 | `quality` | Image quality (`Adequate` / `Inadequate`) |
 | `macular_edema` | Binary flag (0 / 1) |
 
-### Ethics — is it safe to commit to git?
-
-These are **real fundus images** from a medical research dataset.
-Before pushing `sample_data/images/` to a public repository, verify that
-your dataset's licence permits redistribution of individual images.
-
-> ⚠️ **Never commit identifiable patient health data to a public repository.**
-> If redistribution is not permitted, add `sample_data/images/` to `.gitignore`
-> and document that users must regenerate the sample by running
-> `python src/generate_sample_data.py` after obtaining the dataset.
-
----
 
 ## Running the Streamlit Inference App
 
@@ -185,3 +173,4 @@ Key packages (see `src/requirements.txt` for pinned versions):
 - pandas, numpy, matplotlib, seaborn
 - Pillow
 - tqdm
+- streamlit
